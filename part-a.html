@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>תרגיל JavaScript 1 - חלק א'</title>
+  <script>
+    // א1 - כרטיס ביקור
+    // const fullName = "רחל כהן";
+    // let age = 20;
+    // const city = "ירושלים";
+    // const isStudent = true;
+    // console.log(`שמי ${fullName}, גילי ${age}, אני גרה ב${city}. סטודנטית: ${isStudent}`);
+    // age = age + 1;
+    // console.log(`בשנה הבאה אהיה בת ${age}`);
+    // fullName = "שרה לוי"; // שגיאה: TypeError: Assignment to constant variable. (נמחק אחרי הבדיקה)
+
+    // א2 - מה הטיפוס?
+    // console.log(typeof 42);        // ניחוש: number
+    // console.log(typeof 3.14);      // ניחוש: number (אין הפרדה בין שלם לעשרוני)
+    // console.log(typeof "שלום");    // ניחוש: string
+    // console.log(typeof true);      // ניחוש: boolean
+    // console.log(typeof undefined); // ניחוש: undefined
+    // console.log(typeof null);      // ניחוש: null -> בפועל "object"! (באג היסטורי בשפה)
+    // console.log("5" + 3);   // "53" - עם + ומחרוזת מתבצע חיבור טקסט (ההפתעה)
+    // console.log("5" - 3);   // 2 - מינוס ממיר למספר
+    // console.log("5" * "2"); // 10
+    // console.log(7 / 2);     // 3.5 - אין חילוק שלמים כמו ב-C#/Java
+
+    // א3 - נכון או לא נכון?
+    console.log(5 == "5");           // ניחוש: true
+    console.log(5 === "5");          // ניחוש: false
+    console.log(0 == false);         // ניחוש: true
+    console.log(0 === false);        // ניחוש: false
+    console.log(null == undefined);  // ניחוש: true
+    console.log(null === undefined); // ניחוש: false
+    console.log(NaN === NaN);        // ניחוש: false (NaN לא שווה לאף ערך, גם לא לעצמו)
+    console.log("a" === "a");        // ניחוש: true
+
+    console.log(Boolean(0));         // false
+    console.log(Boolean(""));        // false
+    console.log(Boolean("0"));       // true - מחרוזת לא ריקה
+    console.log(Boolean([]));        // true - מערך (גם ריק) הוא אובייקט
+    console.log(Boolean(null));      // false
+    console.log(Boolean(undefined)); // false
+    console.log(Boolean("false"));   // true - מחרוזת לא ריקה
+    console.log(Boolean(-1));        // true - כל מספר חוץ מ-0 ו-NaN
+    // תמיד עדיף === כי הוא משווה גם טיפוס וגם ערך, בלי המרות מפתיעות.
+  </script>
+</head>
+<body>
+  <h1>חלק א'</h1>
+  <p>פתחי את הקונסולה (F12) כדי לראות את התוצאות.</p>
+</body>
+</html>
